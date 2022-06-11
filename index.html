@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frenzy Store</title>
+
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+  <!-- customized css link -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+
+  <!-- body font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/9167bd0c84.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+  <!-- header section -->
+  <header id="head-color" class="mx-5 pb-1 ">
+    <h1 id="logo" class="text-center m-3 pt-3"><i class="fas fa-store"></i> Frenzy Store</h1>
+    <p class="text-center pb-1 m-3  "> <span class="text-dark"> ~ Where comfort meets elegance ~</span></p>
+  </header>
+  <main id="cart-visiblity" class="conatiner  my-3 ">
+    <div class="mx-5">
+      <!-- search section -->
+      <div class="input-group">
+        <input type="text" class="form-control" type="text" />
+        <button type="button" class=" btn btn-outline-success search-button px-3 py-2" type="button"
+          data-toggle="button" aria-pressed="false" autocomplete="off" id="search-btn" onclick="loadProducts()">
+          Search
+        </button>
+      </div>
+    </div>
+    <div class="row mx-3">
+      <div class="col-lg-9 col-md-7 col-5 ">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 " id="all-products">
+          <!-- Products will be shown here -->
+        </div>
+      </div>
+      <!-- cart section -->
+      <div class=" col-md-3 col-lg-3 col-sm-5 cart-main">
+        <div class="cart " id="my-cart">
+          <table class="table">
+            <thead>
+              <h1>My-Cart <span class="ms-5 ps-5"> <i class="fas fa-cart-plus"></i></span></h1>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Total Items:</th>
+                <td> <span id="total-Products"> 0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>$ <span id="price">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Delivery-Charge:</th>
+                <td>$ <span id="delivery-charge">20</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Total-Tax:</th>
+                <td>$ <span id="total-tax">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td colspan="2">$ <span id="total">0</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="parces text-center">
+            <button class="btn btn-outline-success text-center">Buy Now <i class="far fa-check-circle"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- add javascript  file  -->
+  <script src="./js/new-app.js"></script>
+</body>
+
+</html>
